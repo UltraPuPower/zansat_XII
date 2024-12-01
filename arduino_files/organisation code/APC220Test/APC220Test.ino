@@ -1,6 +1,6 @@
 /*
  Met deze code kun je de APC220 module als transmitter testen. 
- De APC220 sluit jeals volgt aan op een uno:
+ De APC220 sluit je als volgt aan op een uno:
  APC220 > UNO
  gnd > gnd
  VCC > 5V
@@ -23,9 +23,9 @@ Serial.begin(9600);
 
 void loop() {
 (number ++);
-Serial.print ("APC220 Erik test   ");
+Serial.print ("APC220 test   ");
 Serial.println (number);
-mySerial.print ("APC220 Erik test   ");
+mySerial.print ("APC220 test   ");
 mySerial.println (number);
 delay (1000);
 }
