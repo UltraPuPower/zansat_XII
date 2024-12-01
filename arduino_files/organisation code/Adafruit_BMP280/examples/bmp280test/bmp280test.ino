@@ -22,12 +22,12 @@
 
 #define BMP_SCK 13
 #define BMP_MISO 12
-#define BMP_MOSI 11 
-#define BMP_CS 10
+#define BMP_MOSI 9 
+#define BMP_CS 8
 
-Adafruit_BMP280 bmp; // I2C
+//Adafruit_BMP280 bmp; // I2C
 //Adafruit_BMP280 bmp(BMP_CS); // hardware SPI
-//Adafruit_BMP280 bmp(BMP_CS, BMP_MOSI, BMP_MISO,  BMP_SCK);
+Adafruit_BMP280 bmp(BMP_CS, BMP_MOSI, BMP_MISO,  BMP_SCK);
 
 void setup() {
   Serial.begin(9600);
