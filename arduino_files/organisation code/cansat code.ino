@@ -1,7 +1,7 @@
 #include <Wire.h>
 #include <SPI.h>
-#include <Adafruit_Sensor.h>
-#include <Adafruit_BMP280.h>
+#include "Adafruit_Sensor.h"
+#include "Adafruit_BMP280.h"
 #include <SoftwareSerial.h>
 
 #define BMP_SCK 13
@@ -16,7 +16,6 @@ int number = 0;
 
 void setup() {
   Serial.begin(9600);
-  Serial.println(F("BMP280 test")); // mag dit weg??
   
   if (!bmp.begin()) {  
     Serial.println(F("Could not find a valid BMP280 sensor, check wiring!"));
@@ -25,12 +24,10 @@ void setup() {
 }
 
 void loop() {
-
-    Serial.print(F("*C Pa m             "));
     Serial.print(bmp.readTemperature());
     Serial.print(bmp.readPressure());
     Serial.print(bmp.readAltitude(1013.25); // this should be adjusted to your local forcase; den haag average 1015
     Serial.println();
   
-    delay(2000);
+    delay(1000);
 }
