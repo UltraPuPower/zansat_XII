@@ -50,6 +50,8 @@ void loop()
   float sensorBMP1; 
   sensorBMP1 = 1;
   
-  Serial.print("Znstsnsrdt-infA:" + String(sensorInfra1) + ",infB:" + String(sensorInfra2) + ",infC:" + String(sensorInfra3) + ",infD:" + String(sensorInfra4) + ",infE:" + String(sensorInfra5) + ",infF:" + String(sensorInfra6) + ",infG:" + String(sensorInfra7) + ",infH:" + String(sensorInfra8) + ",infI:" + String(sensorInfra9) + ",ultA:" + String(sensorUltra1) + ",ultB:" + String(sensorUltra2) + ",ultC:" + String(sensorUltra3) + ",ultD:" + String(sensorUltra4) + ",gasA:" + String(sensorGas1) + ",bmpA:" + String(sensorBMP1) + "-end");
+  String printer_list = "Znstsnsrdt-infA:" + String(sensorInfra1) + ",infB:" + String(sensorInfra2) + ",infC:" + String(sensorInfra3) + ",infD:" + String(sensorInfra4) + ",infE:" + String(sensorInfra5) + ",infF:" + String(sensorInfra6) + ",infG:" + String(sensorInfra7) + ",infH:" + String(sensorInfra8) + ",infI:" + String(sensorInfra9) + ",ultA:" + String(sensorUltra1) + ",ultB:" + String(sensorUltra2) + ",ultC:" + String(sensorUltra3) + ",ultD:" + String(sensorUltra4) + ",gasA:" + String(sensorGas1) + ",bmpA:" + String(sensorBMP1) + "-done";
+
+  Serial.print(printer_list);
   delay(1000);
 }
