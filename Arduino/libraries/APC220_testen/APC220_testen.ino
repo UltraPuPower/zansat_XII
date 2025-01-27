@@ -6,12 +6,12 @@
  VCC > 5V
  en > niet aansluiten
  RXD > D10
- TXD > D9
+ TXD > D11
  AUX > niet aansluiten
  SET > niet aansluiten
  */
 #include <SoftwareSerial.h>
-SoftwareSerial mySerial(9,10);
+SoftwareSerial mySerial(11,10);
 int number = 0;
 
 void setup() {
